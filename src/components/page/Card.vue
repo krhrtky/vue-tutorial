@@ -1,11 +1,10 @@
 <template>
   <div class="gif mdl-card mdl-shadow--2dp">
     <div class="mdl-card__title mdl-card--expand"></div>
-    <div class="mdl-card--action">
+    <div class="mdl-card__actions">
       <span class="filename">Title</span>
     </div>
   </div>
-
 </template>
 
 <script>

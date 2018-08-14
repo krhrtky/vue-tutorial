@@ -2,6 +2,9 @@
   "env": {
     "jest": true
   },
+  "extends": [
+    "plugin:vue/essential"
+  ],
   "globals": {
   },
   "rules": {

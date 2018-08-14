@@ -2,21 +2,21 @@
   <main class="mdl-layout__content">
     <div class="page-content">
       <search></search>
-      <card v-for="n in 10"></card>
+      <card v-for="n in 10"/>
     </div>
   </main>
 </template>
 
 <script>
 
-import Card from './Card';
-import Search from './Search';
+import Card from './Card'
+import Search from './Search'
 
 export default {
   name: 'TimeLine',
   components: {
     Card,
-    Search,
+    Search
   }
 }
 </script>
