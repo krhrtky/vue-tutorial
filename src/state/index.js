@@ -1,5 +1,5 @@
-import Vue from 'Vue'
-import Vuex from 'Vuex'
+import Vue from 'vue'
+import Vuex from 'vuex'
 import {CHANGE_KEYWORD, SEARCH} from './mutationTypes'
 
 Vue.use(Vuex)
@@ -9,7 +9,7 @@ const getGIFs = query => {
   return fetch(`http://api.giphy.com/v1/gifs/search?q=${params}&api_key=dc6zaTOxFJmzC`).then(res => res.json())
 }
 
-const index = {
+const state = {
   keyword: '',
   gifList: []
 }
@@ -27,10 +27,17 @@ const actions = {
   }
 }
 const getters = {}
-const mutations = {}
+const mutations = {
+  [CHANGE_KEYWORD] (state, keyword) {
+    state.keyword = keyword
+  },
+  [SEARCH] (state, gifList) {
+    state.gifList = gifList
+  }
+}
 
 export default new Vuex.Store({
-  index,
+  state,
   getters,
   actions,
   mutations
