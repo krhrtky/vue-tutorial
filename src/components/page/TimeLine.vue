@@ -1,8 +1,12 @@
 <template>
   <main class="mdl-layout__content">
     <div class="page-content">
-      <search></search>
-      <card v-for="n in 10"/>
+      <search/>
+      <card
+        v-for="gif in gifList"
+        :gif="gif"
+        :key="gifList.indexOf(gif)"
+      />
     </div>
   </main>
 </template>
