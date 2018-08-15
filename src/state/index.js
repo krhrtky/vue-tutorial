@@ -26,7 +26,10 @@ const actions = {
       })
   }
 }
-const getters = {}
+const getters = {
+  gifList: state => state.gifList
+}
+
 const mutations = {
   [CHANGE_KEYWORD] (state, keyword) {
     state.keyword = keyword

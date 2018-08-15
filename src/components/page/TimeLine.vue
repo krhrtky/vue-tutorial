@@ -11,9 +11,13 @@
 
 import Card from './Card'
 import Search from './Search'
+import {mapGetters} from 'vuex'
 
 export default {
   name: 'TimeLine',
+  computed: {
+    ...mapGetters(['gifList'])
+  },
   components: {
     Card,
     Search
