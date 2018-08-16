@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   .gif {
     margin: 0 auto;
     width: 60%;
