@@ -21,9 +21,7 @@ const actions = {
 
   [SEARCH] ({ commit, state }) {
     getGIFs(state.keyword)
-      .then(data => {
-        commit(SEARCH, data)
-      })
+      .then(data => commit(SEARCH, data.data))
   }
 }
 const getters = {

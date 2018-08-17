@@ -5,7 +5,7 @@
       <card
         v-for="gif in gifList"
         :gif="gif"
-        :key="gifList.indexOf(gif)"
+        :key="gif.id"
       />
     </div>
   </main>
